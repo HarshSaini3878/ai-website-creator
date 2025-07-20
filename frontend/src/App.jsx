@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect, useCallback } from "react"
 import axios from "axios"
 import LivePreview from "./components/LivePreview"
+import CodePlayground from "./components/CodePlayground"
 
 const App = () => {
   const [project, setProject] = useState(null)
@@ -264,7 +265,8 @@ const App = () => {
             minWidth: "300px",
           }}
         >
-          <LivePreview code={project} />
+          <CodePlayground code={project} />
+
         </div>
       )}
     </div>
